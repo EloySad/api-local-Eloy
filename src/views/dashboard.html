@@ -1,0 +1,111 @@
+<!-- 
+Full Name: Johan Eloy Sanchez Hernandez
+Clan: Clan Gates
+Date: 05 de Junio de 2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Meta data -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="At Atlantis you will find the food for your travels." />
+   <meta name="keywords" content="riwi, JavaScript, Atlantis, Rooms">
+   <meta name="sitedomain" content="https://riwi.io">
+   <meta name="organization" content="Riwi">
+   <meta name="author" content="Eloy Sanchez">
+   <meta name="designer" content="Riwi">
+   <meta name="copyright" content="© 2024 Riwi. All rights reserved">
+   <meta name="robots" content="index,follow">
+   <meta name="googlebot" content="index,follow">
+   <meta name="revisit-after" content="15days">
+   <link rel="shortcut icon" href="https://logos-world.net/wp-content/uploads/2023/05/Aquaman-Logo.png"
+       type="image/x-icon">
+  <title>Index</title>
+</head>
+
+<body>
+  <header>
+    <!-- Header with navbar -->
+    <nav class=" navbar navbar-expand-lg bg-light position-sticky top-0 z-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Atlantis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <div class=" text-center">
+          <button type="button" class="btn btn-secondary" id="btn-logout">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+  
+
+  <main class="container">
+    <!-- Formulario para agregar y modificar los datos -->
+    <form class="text-center mb-5">
+      <div class="form-group py-2 text-start">
+        <label for="name">#Room</label>
+        <input type="text" class="form-control" id="room-number" aria-describedby="Room number" placeholder="Enter room number">
+      </div>
+      <div class="form-group mb-2 text-start">
+        <label for="image">Image</label>
+        <input type="url" class="form-control" id="url-image" aria-describedby="image" placeholder="Enter url image">
+      </div>
+      <div class="form-group mb-2 text-start">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" id="type-room" aria-describedby="text" placeholder="Enter type of room (Suite, Family or Basic)">
+      </div>
+      <div class="form-group mb-2 text-start">
+        <label for="pricing">Price Room</label>
+        <input type="text" class="form-control" id="pricing" aria-describedby="pricing" placeholder="Enter pricing of room per night">
+      </div>
+      <div class="form-group mb-2 text-start">
+        <label for="beds">Beds</label>
+        <input type="text" class="form-control" id="beds" aria-describedby="beds" placeholder="Enter number of beds">
+      </div>
+      <div class="form-group mb-2 text-start">
+        <label for="bathrooms">Bathrooms</label>
+        <input type="text" class="form-control" id="bathrooms" aria-describedby="image" placeholder="Enter number of bathrooms">
+      </div>
+      <div class="form-group mb-2 text-start">
+        <label for="services">Services</label>
+        <input type="text" class="form-control" id="services" aria-describedby="services" placeholder="Enter Services including (Wifi, Air Conditioning(A/C) and/or Breakfast)">
+      </div>
+      <button type="submit" id="btn-new" class="btn btn-success">
+        Save
+      </button>
+    </form>
+    <table class="table table-striped text-center align-middle table-hover">
+      <!-- Tabla para mostrar todos los datos de nuestra API local -->
+      <thead>
+        <tr>
+          <th scope="col">Room number</th>
+          <th scope="col">Picture</th>
+          <th scope="col">room type</th>
+          <th scope="col">pricing</th>
+          <th scope="col">Beds</th>
+          <th scope="col">Bathrooms</th>
+          <th scope="col">Services</th>
+          <th scope="col">options</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <!-- Aca se van a listar las habitaciones -->
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <!-- footer -->
+  </footer>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/dashboard.js"></script>
+</body>
+
+</html>
